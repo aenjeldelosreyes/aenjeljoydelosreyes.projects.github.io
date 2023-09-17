@@ -1,0 +1,1206 @@
+<html>
+
+<head>
+    <title>
+        Star Signs
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="small icon" href="https://i.pinimg.com/originals/85/db/23/85db232a0e2f4d7ec93db9bcedeb97d8.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url(https://imagizer.imageshack.com/img924/5757/28VzVG.gif);
+            background-color: black;
+            font-family: 'Times New Roman';
+            text-align: center;
+        }
+
+        .vid {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            margin-left: 17%;
+        }
+
+        .vid iframe,
+        .vid object,
+        .vid embed {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 60%;
+        }
+
+        .h0 {
+            background-color: #fdfd96;
+            border: 3px solid yellow;
+            color: black;
+            text-shadow: 2px 1px gray;
+            font-weight: bold;
+            margin: auto;
+            font-size: 36px;
+        }
+
+        .h1 {
+            background-color: #77506ba8;
+            border: 1px solid #F3E3C2;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .h2 {
+            background-color: #0c2e5ba6;
+            border: 1px solid #F0C5B6;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .h3 {
+            background-color: #161616b2;
+            border: 1px solid #A98350;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            margin: auto;
+        }
+
+        .carousel-caption h3 {
+            color: #fff !important;
+        }
+
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: white;
+        }
+
+        #navbar a {
+            float: right;
+            display: block;
+            color: #2b2927;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: rgb(56, 30, 66);
+            color: white;
+        }
+
+        .sticky {
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+        }
+
+        .content {
+            margin-left: 5%;
+            align-items: center;
+        }
+
+        .box {
+            width: 300px;
+            background-color: #f0b6de;
+            margin: 30px;
+            margin-top: 100px;
+            padding: 20px;
+            font-size: 28px;
+            float: left;
+            border: 2px solid white;
+        }
+
+        .sign {
+            width: 230px;
+            height: 230px;
+            background-color: white;
+            margin: 10px;
+            float: left;
+        }
+
+        .symbol {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 10px;
+        }
+
+        .button {
+            padding: 5px 10px;
+            font-size: 17px;
+            text-align: center;
+            cursor: pointer;
+            outline: 1px;
+            color: white;
+            background-color: #0c2e5ba6;
+            border: none;
+            box-shadow: 0 5px #999;
+        }
+
+        .button:hover {
+            background-color: rgb(56, 30, 66);
+            color: white;
+        }
+
+        .button:active {
+            background-color: rgb(90, 48, 107);
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+            color: white;
+        }
+
+        .textname {
+            color: #2b2927;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .descripname {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: bold;
+            padding-top: 50px;
+            text-shadow: 2px 0px grey;
+        }
+
+        .textdetails {
+            color: #4d4943;
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        .descripdetails {
+            color: white;
+            font-size: 17px;
+            text-align: jcenter;
+        }
+
+        .textdate {
+            text-align: center;
+        }
+
+        .texts {
+            text-align: left;
+        }
+
+        #a {
+            display: none;
+        }
+
+        #b {
+            display: none;
+        }
+
+        #c {
+            display: none;
+        }
+
+        #d {
+            display: none;
+        }
+
+        #e {
+            display: none;
+        }
+
+        #f {
+            display: none;
+        }
+
+        #g {
+            display: none;
+        }
+
+        #h {
+            display: none;
+        }
+
+        #i {
+            display: none;
+        }
+
+        #j {
+            display: none;
+        }
+
+        #k {
+            display: none;
+        }
+
+        #l {
+            display: none;
+        }
+
+        .descript {
+            background-color: white;
+            background-image: url(https://imagizer.imageshack.com/img922/9769/SJwkOi.png);
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        footer .glyphicon {
+            font-size: 28px;
+            margin-top: 50px;
+            color: yellow;
+            text-shadow: 2px 2px white;
+        }
+
+        .footer {
+            font-size: 17px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .footercredits {
+            font-size: 10px;
+            font-family: 'Arial';
+            color: #2b2927;
+            font-weight: lighter;
+            background-color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- /Header/ -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://imagizer.imageshack.com/img923/2789/Kh5ZFo.png" alt="pic1">
+                <div class="carousel-caption">
+                    <div class="h0">STAR SIGNS
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://imagizer.imageshack.com/img922/4874/ffaynm.png" alt="pic2">
+                <div class="carousel-caption">
+                    <div class="h1">“You cannot just sit there and wait for people to give you that golden dream. You
+                        have to go out there and make it happen.”
+                        <br>
+                        —Diana Ross (Aries)
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://imagizer.imageshack.com/img923/9899/4wQlGS.png" alt="pic3">
+                <div class="carousel-caption">
+                    <div class="h2">“I can do things you cannot. You can do things I cannot. Together we can do great
+                        things.”
+                        <br>
+                        —Mother Teresa (Cancer)
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://imagizer.imageshack.com/img922/8636/sV1dPy.png" alt="pic4">
+                <div class="carousel-caption">
+                    <div class="h3">“The important thing is not to stop questioning. Curiosity has its own reason for
+                        existing.”
+                        <br>
+                        —Albert Einstein (Gemini)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" title="Prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" title="Next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!-- /Sticky Nav/ -->
+    <div id="navbar">
+        <a href="https://bit.ly/AenjelDelosReyes_LinkedIn" target="_blank" title="Creator of this website">Contact</a>
+        <a href="https://www.google.com/search?rlz=1C1GCEJ_enPH991PH991&sxsrf=ALiCzsZfHUKA6FP_yPbDE6YIPUkrSyZpwQ:1671175468132&q=latest+news+about+western+and+chinese+zodiac&tbm=nws&sa=X&ved=2ahUKEwinnorhzf37AhV2iFYBHd3yCkIQ0pQJegQICxAB&biw=1366&bih=649&dpr=1"
+            target="_blank" title="Latest News">News</a>
+        <a href="#description">Description</a>
+        <a href="#home">Home</a>
+        <!-- Sticky Nav might have a few glitches. Please refresh a few more times. Thank you! -->
+    </div>
+
+    <div id="home" class="container-fluid">
+
+        <!-- Main Content -->
+        <div class="content" id="home">
+            <a href="description"> </a>
+
+            <!-- Sagittarius -->
+            <div class="box">
+
+                <div>
+                    <img src="https://imagizer.imageshack.com/img923/2696/ktQFMh.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Sagittarius
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        November 22 - December 21
+                    </div><span id="sagiDots"></span>
+                    <span id="a">
+                        <div class="textdate">
+                            Zodiac Symbol: Archer
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img924/1983/prXCTJ.jpg" class="symbol">
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Fire
+                            <br>
+                            Sign Ruler: Jupiter
+                            <br>
+                            Quality: Mutable
+                        </div>
+
+                        <br>
+                        Sagittarians are optimistic, lovers of freedom, hilarious, fair-minded, honest and intellectual.
+                        They are spontaneous and fun, usually with a lot of friends, and are perhaps the best
+                        conversationalists in the zodiac (maybe tied with Gemini).<br>
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getSagittarius()" id="sagiBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Capricorn -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img923/3594/56cP1c.png" class="sign">
+                </div>
+                <div class="textname">
+                    <h>
+                        Capricorn
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        December 21 - January 20
+                    </div><span id="capriDots"></span>
+                    <span id="b">
+                        <div class="textdate">
+                            Zodiac Symbol: Sea Goat
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img923/2057/RmiM5d.jpg" class="symbol">
+
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Earth
+                            <br>
+                            Sign Ruler: Saturn
+                            <br>
+                            Quality: Cardinal
+                        </div>
+
+                        <br>
+                        Capricorns are overachievers, persistent, practical, and sensitive. They're known for their
+                        hardworking habits, and they're overachievers who make success look effortless — even though
+                        they put a lot of time and care into their careers and relationships.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getCapricorn()" id="capriBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Aquarius -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img924/6688/KI3Zka.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Aquarius
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        January 20 - February 18
+                    </div><span id="aquaDots"></span>
+                    <span id="c">
+                        <div class="textdate">
+                            Zodiac Symbol: Water-Bearer
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img924/3627/KF9JdI.jpg" class="symbol">
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Air
+                            <br>
+                            Sign Ruler: Uranus
+                            <br>
+                            Quality: Fixed
+                        </div>
+
+                        <br>
+                        Aquarians are highly intellectual and creative, Walker says. Marked by independence, they don't
+                        like to be instructed what to do. While they can be social, they are not likely to participate
+                        in social interactions unless they truly want to.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getAquarius()" id="aquaBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Virgo -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img922/1340/98VQQ1.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Virgo
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        August 23 - September 23
+                    </div><span id="virDots"></span>
+                    <span id="d">
+                        <div class="textdate">
+                            Zodiac Symbol: The Maiden
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img924/3240/4ZEdSF.jpg" class="symbol">
+
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Earth
+                            <br>
+                            Sign Ruler: Mercury
+                            <br>
+                            Quality: Mutable
+                        </div>
+
+                        <br>
+                        Virgo is a person born between August 23rd and September 22nd. Virgos are known for being
+                        practical, sensible, and loyal. They make excellent friends and partners. Virgos are known for
+                        being perfectionists, and can be meticulous and single-minded in their pursuit of improvement.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getVirgo()" id="virBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Libra -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img924/5855/BlCKml.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Libra
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        September 23 - October 23
+                    </div><span id="libDots"></span>
+                    <span id="e">
+                        <div class="textdate">
+                            Zodiac Symbol: Scales
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img924/7066/dy24c3.jpg" class="symbol">
+
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Air
+                            <br>
+                            Sign Ruler: Venus
+                            <br>
+                            Quality: Cardinal
+                        </div>
+
+                        <br>
+                        Libras are known for being charming, beautiful, and well-balanced. They thrive on making things
+                        orderly and aesthetically pleasing. They also crave balance, and they can be equally as
+                        self-indulgent as they are generous. Libras are also the kings and queens of compromise, and
+                        they like making peace between others.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getLibra()" id="libBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Aries -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img923/5396/uY180X.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Aries
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        March 20 - April 20
+                    </div><span id="arDots"></span>
+                    <span id="f">
+                        <div class="textdate">
+                            Zodiac Symbol: Ram
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img923/7555/0LFZqu.jpg" class="symbol">
+
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Fire
+                            <br>
+                            Sign Ruler: Mars
+                            <br>
+                            Quality: Cardinal
+                        </div>
+
+                        <br>
+                        Like their fellow fire signs, Leo and Sagittarius, Aries is a passionate, motivated, and
+                        confident leader who builds community with their cheerful disposition and relentless
+                        determination. Uncomplicated and direct in their approach, they often get frustrated by
+                        exhaustive details and unnecessary nuances.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getAries()" id="arBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Scorpio -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img922/476/yLYJFf.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Scorpio
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        October 23 - November 22
+                    </div><span id="scorDots"></span>
+                    <span id="g">
+                        <div class="textdate">
+                            Zodiac Symbol: Scorpion
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img922/3572/LOTaYY.jpg" class="symbol">
+
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Water
+                            <br>
+                            Sign Ruler: Pluto
+                            <br>
+                            Quality: Fixed
+                        </div>
+
+                        <br>
+                        As a fixed water sign, Scorpios are known for their loyalty and devotion — and also their
+                        passion. In fact, they are known to have such intense personalities that they are often confused
+                        with vibrant fire signs. Alas, they just have deep feelings and emotions.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getScorpio()" id="scorBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Taurus -->
+            <div class="box">
+                <div>
+                    <img src="https://imageshack.com/i/poQkyK7tp" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Taurus
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        April 20 - May 21
+                    </div><span id="tauDots"></span>
+                    <span id="h">
+                        <div class="textdate">
+                            Zodiac Symbol: Bull
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img923/3728/fNRhuf.jpg" class="symbol">
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Earth
+                            <br>
+                            Sign Ruler: Venus
+                            <br>
+                            Quality: Fixed
+                        </div>
+
+                        <br>
+                        Taurus traits include being hard-headed, down-to-earth, tenacious, reliable, loyal, and sensual.
+                        All of these characteristics mirror themes covered by the Second House of Self-Worth and Income,
+                        which Taurus rules.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getTaurus()" id="tauBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Pisces -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img922/7641/3oKfNZ.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Pisces
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        February 18 - March 20
+                    </div><span id="pisDots"></span>
+                    <span id="i">
+                        <div class="textdate">
+                            Zodiac Symbol: Two Fish
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img922/9504/78bzDX.jpg" class="symbol">
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Water
+                            <br>
+                            Sign Ruler: Neptune
+                            <br>
+                            Quality: Mutable
+                        </div>
+
+                        <br>
+                        Pisces people are known for being emotionally sensitive, gracious, and emotionally aware. Pisces
+                        characters are regarded for being among the most sympathetic of the zodiac signs, and they will
+                        go to great lengths to ensure the happiness of those around them. They're also creative and
+                        imaginative.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getPisces()" id="pisBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Gemini -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img924/4812/iQqY1w.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Gemini
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        May 21 - June 21
+                    </div><span id="gemDots"></span>
+                    <span id="j">
+                        <div class="textdate">
+                            Zodiac Symbol: Twins
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img923/3072/sD7V6W.jpg" class="symbol">
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Air
+                            <br>
+                            Sign Ruler: Mercury
+                            <br>
+                            Quality: Mutable
+                        </div>
+
+                        <br>
+                        Playful and intellectually curious, Gemini is constantly juggling a variety of passions,
+                        hobbies, careers, and friend groups. They are the social butterflies of the zodiac: These
+                        quick-witted twins can talk to anyone about anything. Find them buzzing between happy hours,
+                        dinner parties, and dance floors.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getGemini()" id="gemBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Leo -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img924/6876/yIyV34.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Leo
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        July 22 - August 23
+                    </div><span id="leoDots"></span>
+                    <span id="k">
+                        <div class="textdate">
+                            Zodiac Symbol: Lion
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img924/4678/1Z8ISc.jpg" class="symbol">
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Fire
+                            <br>
+                            Sign Ruler: Sun
+                            <br>
+                            Quality: Fixed
+                        </div>
+
+                        <br>
+                        Leo traits include being confident, comfortable being the center of attention, drama-adoring,
+                        ambitious, loyal, fiercely protective of their nearest and dearest, generous, luxury-loving,
+                        sunny, and big-hearted.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getLeo()" id="leoBtn" class="button">Read More</button>
+            </div>
+
+            <!-- Cancer -->
+            <div class="box">
+                <div>
+                    <img src="https://imagizer.imageshack.com/img924/4092/4AU01N.png" class="sign">
+                </div>
+
+                <div class="textname">
+                    <h>
+                        Cancer
+                    </h>
+                </div>
+
+                <div class="textdetails">
+                    <p>
+                    <div class="textdate">
+                        June 21 - July 22
+                    </div><span id="canDots"></span>
+                    <span id="l">
+                        <div class="textdate">
+                            Zodiac Symbol: Crab
+                        </div>
+
+                        <div>
+                            <img src="https://imagizer.imageshack.com/img923/853/lBv4wS.jpg" class="symbol">
+                        </div>
+
+                        <div class="texts">
+                            <br>
+                            Element: Water
+                            <br>
+                            Sign Ruler: Moon
+                            <br>
+                            Quality: Cardinal
+                        </div>
+
+                        <br>
+                        Cancers have a reputation for being hyper emotional, temperamental, and spiteful. Cancers, in
+                        additional to being devoted, are extremely fond of their loved ones, often to an unhealthy
+                        degree. They place a high value on family and close friends, and will go to great lengths to
+                        defend them, no matter the price.
+                    </span>
+                    </p>
+                </div>
+                <button onclick="getCancer()" id="canBtn" class="button">Read More</button>
+            </div>
+            <!-- end of home -->
+        </div>
+    </div>
+
+
+    <!-- DESCRIPTION -->
+    <div id="description" class="container-fluid">
+        <a href="home"></a>
+        <div class="descript">
+            <div class="descripname">
+                Chinese and Western Zodiacs
+            </div>
+
+            <div class="descripdetails">
+                This is a brief video to help better understand the zodiac signs of both the Chinese and Western
+                culture.
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/EJhBFZa4q_Q?autoplay=1&mute=1"></iframe>
+            </div>
+            <!-- end of description -->
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="Back to the Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+
+            <div class="footer">
+                <p>
+                    You've reached the end of this page
+                </p>
+                <div class="footercredits">
+                    I am not the owner of all of the pictures, video, and details on this website.
+                    This was created to fulfill an academic requirement in our Web Development class.
+                    All rights and credits belong to the rightful owners.
+                </div>
+            </div>
+            <!-- end of footer -->
+        </footer>
+
+
+
+        <script>
+            window.onscroll = function () { myFunction() };
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+            $(document).ready(function () {
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            })
+
+            $(document).ready(function () {
+                $("a").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+
+            function getSagittarius() {
+                var sagiDots = document.getElementById("sagiDots");
+                var sagiMoreText = document.getElementById("a");
+                var sagiBtnText = document.getElementById("sagiBtn");
+
+                if (sagiDots.style.display === "none") {
+                    sagiDots.style.display = "inline";
+                    sagiBtnText.innerHTML = "Read More";
+                    sagiMoreText.style.display = "";
+                } else {
+                    sagiDots.style.display = "none";
+                    sagiBtnText.innerHTML = "Read Less";
+                    sagiMoreText.style.display = "inline";
+                }
+            }
+
+            function getCapricorn() {
+                var capriDots = document.getElementById("capriDots");
+                var capriMoreText = document.getElementById("b");
+                var capriBtnText = document.getElementById("capriBtn");
+
+                if (capriDots.style.display === "none") {
+                    capriDots.style.display = "inline";
+                    capriBtnText.innerHTML = "Read More";
+                    capriMoreText.style.display = "";
+                } else {
+                    capriDots.style.display = "none";
+                    capriBtnText.innerHTML = "Read Less";
+                    capriMoreText.style.display = "inline";
+                }
+            }
+
+            function getAquarius() {
+                var aquaDots = document.getElementById("aquaDots");
+                var aquaMoreText = document.getElementById("c");
+                var aquaBtnText = document.getElementById("aquaBtn");
+
+                if (aquaDots.style.display === "none") {
+                    aquaDots.style.display = "inline";
+                    aquaBtnText.innerHTML = "Read More";
+                    aquaMoreText.style.display = "";
+                } else {
+                    aquaDots.style.display = "none";
+                    aquaBtnText.innerHTML = "Read Less";
+                    aquaMoreText.style.display = "inline";
+                }
+            }
+
+            function getVirgo() {
+                var virDots = document.getElementById("virDots");
+                var virMoreText = document.getElementById("d");
+                var virBtnText = document.getElementById("virBtn");
+
+                if (virDots.style.display === "none") {
+                    virDots.style.display = "inline";
+                    virBtnText.innerHTML = "Read More";
+                    virMoreText.style.display = "";
+                } else {
+                    virDots.style.display = "none";
+                    virBtnText.innerHTML = "Read Less";
+                    virMoreText.style.display = "inline";
+                }
+            }
+
+            function getLibra() {
+                var libDots = document.getElementById("libDots");
+                var libMoreText = document.getElementById("e");
+                var libBtnText = document.getElementById("libBtn");
+
+                if (libDots.style.display === "none") {
+                    libDots.style.display = "inline";
+                    libBtnText.innerHTML = "Read More";
+                    libMoreText.style.display = "";
+                } else {
+                    libDots.style.display = "none";
+                    libBtnText.innerHTML = "Read Less";
+                    libMoreText.style.display = "inline";
+                }
+            }
+
+            function getAries() {
+                var arDots = document.getElementById("arDots");
+                var arMoreText = document.getElementById("f");
+                var arBtnText = document.getElementById("arBtn");
+
+                if (arDots.style.display === "none") {
+                    arDots.style.display = "inline";
+                    arBtnText.innerHTML = "Read More";
+                    arMoreText.style.display = "";
+                } else {
+                    arDots.style.display = "none";
+                    arBtnText.innerHTML = "Read Less";
+                    arMoreText.style.display = "inline";
+                }
+            }
+
+            function getScorpio() {
+                var scorDots = document.getElementById("scorDots");
+                var scorMoreText = document.getElementById("g");
+                var scorBtnText = document.getElementById("scorBtn");
+
+                if (scorDots.style.display === "none") {
+                    scorDots.style.display = "inline";
+                    scorBtnText.innerHTML = "Read More";
+                    scorMoreText.style.display = "";
+                } else {
+                    scorDots.style.display = "none";
+                    scorBtnText.innerHTML = "Read Less";
+                    scorMoreText.style.display = "inline";
+                }
+            }
+
+            function getTaurus() {
+                var tauDots = document.getElementById("tauDots");
+                var tauMoreText = document.getElementById("h");
+                var tauBtnText = document.getElementById("tauBtn");
+
+                if (tauDots.style.display === "none") {
+                    tauDots.style.display = "inline";
+                    tauBtnText.innerHTML = "Read More";
+                    tauMoreText.style.display = "";
+                } else {
+                    tauDots.style.display = "none";
+                    tauBtnText.innerHTML = "Read Less";
+                    tauMoreText.style.display = "inline";
+                }
+            }
+
+            function getPisces() {
+                var pisDots = document.getElementById("pisDots");
+                var pisMoreText = document.getElementById("i");
+                var pisBtnText = document.getElementById("tauBtn");
+
+                if (pisDots.style.display === "none") {
+                    pisDots.style.display = "inline";
+                    pisBtnText.innerHTML = "Read More";
+                    pisMoreText.style.display = "";
+                } else {
+                    pisDots.style.display = "none";
+                    pisBtnText.innerHTML = "Read Less";
+                    pisMoreText.style.display = "inline";
+                }
+            }
+
+            function getGemini() {
+                var gemDots = document.getElementById("gemDots");
+                var gemMoreText = document.getElementById("j");
+                var gemBtnText = document.getElementById("tauBtn");
+
+                if (gemDots.style.display === "none") {
+                    gemDots.style.display = "inline";
+                    gemBtnText.innerHTML = "Read More";
+                    gemMoreText.style.display = "";
+                } else {
+                    gemDots.style.display = "none";
+                    gemBtnText.innerHTML = "Read Less";
+                    gemMoreText.style.display = "inline";
+                }
+            }
+
+            function getLeo() {
+                var leoDots = document.getElementById("leoDots");
+                var leoMoreText = document.getElementById("k");
+                var leoBtnText = document.getElementById("tauBtn");
+
+                if (leoDots.style.display === "none") {
+                    leoDots.style.display = "inline";
+                    leoBtnText.innerHTML = "Read More";
+                    leoMoreText.style.display = "";
+                } else {
+                    leoDots.style.display = "none";
+                    leoBtnText.innerHTML = "Read Less";
+                    leoMoreText.style.display = "inline";
+                }
+            }
+
+            function getCancer() {
+                var canDots = document.getElementById("canDots");
+                var canMoreText = document.getElementById("l");
+                var canBtnText = document.getElementById("tauBtn");
+
+                if (canDots.style.display === "none") {
+                    canDots.style.display = "inline";
+                    canBtnText.innerHTML = "Read More";
+                    canMoreText.style.display = "";
+                } else {
+                    canDots.style.display = "none";
+                    canBtnText.innerHTML = "Read Less";
+                    canMoreText.style.display = "inline";
+                }
+            }
+        </script>
+</body>
+<!-- Photos were uploaded to ImageShack.com, where this student took advantage of the 30-day free trial. Images may not be available starting on January 13, 2023. Project submitted on December 16, 2022. Thank you for your patience and kind consideration. -->
+</html>
